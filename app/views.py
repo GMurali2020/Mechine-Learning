@@ -15,7 +15,7 @@ import json
 import io
 #data='5d'
 class DateResultClass(APIView):
-    def retrieve(self,request):
+    def get(self,request):
         stream=io.BytesIO(request.body)
         data = JSONParser().parse(stream)
 
